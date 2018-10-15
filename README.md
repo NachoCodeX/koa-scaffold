@@ -1,5 +1,5 @@
-#  SIIAPP
-SIIAPP is an application for student management . 
+#  Koa Scaffold
+Koa + Typescript + Socket.io. 
 
 ## Getting Started 
 This application is completely written on Typescript.
@@ -31,8 +31,7 @@ The following command create a dist folder in root folder.
     yarn build 
 ## Authors
 -   **Nacho Castillo**  -  _Developer_  -  [Github](https://github.com/NachoCodeX)
--   **Tavo Velazquez**  -  _Developer_  -  [Github](https://github.com/xt1058)
 
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://wikirdito-app.herokuapp.com/) file for details
+This project is licensed under the MIT License

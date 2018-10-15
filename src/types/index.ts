@@ -1,4 +1,4 @@
 import { Schema } from 'mongoose'
-export type ID = Schema.Types.ObjectId
+export type ID = Schema.Types.ObjectId & string
 
 

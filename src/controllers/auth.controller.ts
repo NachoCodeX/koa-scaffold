@@ -5,23 +5,21 @@ import { SecurityService } from "../security";
 import { Container, Inject } from 'typescript-ioc'
 import autobind from 'autobind-decorator'
 
-
+@autobind
 class AuthController {
     @Inject private helpers: UserHelpers
     @Inject private securityService: SecurityService
 
     constructor() { }
 
-    ///
-    @autobind
-    public async signIn(ctx: Context) {
+
+    async signIn(ctx: Context) {
         console.log(ctx.request.body);
         ctx.body = 'AUTH CONTROLLER2'
     }
 
-    ///
-    @autobind
-    public async signUp(ctx: Context) {
+
+    async signUp(ctx: Context) {
         try {
 
             const data: IUserModel = ctx.request.body as IUserModel
