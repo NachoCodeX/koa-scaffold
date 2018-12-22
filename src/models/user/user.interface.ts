@@ -4,8 +4,8 @@ export interface IUserModel {
     avatar?: string,
     email: string,
     password: string,
-    firstName: string,
-    lastName: string,
+    firstname: string,
+    lastname: string,
     gender: string,
     isActive?: boolean,
 }
