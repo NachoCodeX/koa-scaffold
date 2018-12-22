@@ -6,7 +6,8 @@ import { PORT } from './config'
 import router from './routes'
 import './websockets/notification.controller'
 import { createSocketServer } from 'socket-controllers'
-import { cors } from './middlewares/cors.middleware'
+const KoaCors = require('@koa/cors');
+
 
 //Logger
 const logger = require('koa-logger')
@@ -37,7 +38,7 @@ class App {
         //BODY PARSER MIDDLEWARE 
         this.app.use(KoaBodyParser())
         //cors
-        this.app.use(cors)
+        this.app.use(KoaCors())
         //logger
         this.app.use(logger())
     }
